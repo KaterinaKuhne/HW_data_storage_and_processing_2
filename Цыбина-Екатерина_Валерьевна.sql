@@ -4,9 +4,6 @@ select distinct tr.brand
 from transaction tr
 where tr.standard_cost > 1500.0;
 
--- Посмотрите схему базы данных здесь: https://raw.githubusercontent.com/KaterinaKuhne/HW_data_storage_and_processing_2/refs/heads/main/Task_1_result.png
-
-
 --2. Вывести все подтвержденные транзакции за период '2017-04-01' по '2017-04-09' включительно.
 
 select tr.transaction_id, tr.transaction_date, tr.order_status    
